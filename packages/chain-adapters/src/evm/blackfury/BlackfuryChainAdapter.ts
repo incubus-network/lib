@@ -25,9 +25,9 @@ export class ChainAdapter extends EvmBaseAdapter<KnownChainIds.BlackfuryMainnet>
     accountNumber: 0,
   }
 
-  private readonly api: unchained.ethereum.V1Api
+  private readonly api: unchained.blackfury.V1Api
 
-  constructor(args: ChainAdapterArgs<unchained.ethereum.V1Api>) {
+  constructor(args: ChainAdapterArgs<unchained.blackfury.V1Api>) {
     super({
       chainId: DEFAULT_CHAIN_ID,
       supportedChainIds: SUPPORTED_CHAIN_IDS,
@@ -37,7 +37,7 @@ export class ChainAdapter extends EvmBaseAdapter<KnownChainIds.BlackfuryMainnet>
 
     this.api = args.providers.http
     this.assetId = ethAssetId
-    this.parser = new unchained.ethereum.TransactionParser({
+    this.parser = new unchained.blackfury.TransactionParser({
       chainId: this.chainId,
       rpcUrl: this.rpcUrl,
     })

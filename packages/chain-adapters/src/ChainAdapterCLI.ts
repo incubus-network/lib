@@ -33,14 +33,14 @@ const dogeChainAdapter = new DogecoinChainAdapter({
   coinName: 'Dogecoin',
 })
 
-const ethChainAdapter = new EthereumChainAdapter({
+const blackfuryChainAdapter = new BlackfuryChainAdapter({
   providers: {
     ws: new unchained.ws.Client<unchained.ethereum.Tx>('wss://api.fury.black'),
     http: new unchained.ethereum.V1Api(
       new unchained.ethereum.Configuration({ basePath: 'https://api.fury.black' }),
     ),
   },
-  rpcUrl: 'https://mainnet.infura.io/v3/d734c7eebcdf400185d7eb67322a7e57',
+  rpcUrl: 'https://evm.fury.fan',
 })
 
 const cosmosChainAdapter = new CosmosChainAdapter({

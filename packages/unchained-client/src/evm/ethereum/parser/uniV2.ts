@@ -176,7 +176,9 @@ export class Parser implements SubParser<Tx> {
     if (txInteractsWithContract(tx, UNI_V2_ROUTER_CONTRACT)) return this.parseUniV2(tx)
     // TODO: parse any transaction that has input data that is able to be decoded using the `stakingRewardsInterface`
     if (
-      UNI_V2_JINX_STAKING_REWARDS_CONTRACTS.some((contract) => txInteractsWithContract(tx, contract))
+      UNI_V2_JINX_STAKING_REWARDS_CONTRACTS.some((contract) =>
+        txInteractsWithContract(tx, contract),
+      )
     )
       return this.parseStakingRewards(tx)
     return

@@ -6,12 +6,12 @@ import {
   mockCGFindByAssetIdData,
   mockCGPriceHistoryData,
 } from './coingecko/coingeckoMockData'
-import { mockJinxyMarketData, mockJinxyPriceHistoryData } from './jinxy/jinxyMockData'
 import {
   mockIdleFindByAssetIdData,
   mockIdlePriceHistoryData,
   mockIdleServiceFindAllData,
 } from './idle/idleMockData'
+import { mockJinxyMarketData, mockJinxyPriceHistoryData } from './jinxy/jinxyMockData'
 import { MarketServiceManager } from './market-service-manager'
 import {
   mockOsmosisFindAllData,

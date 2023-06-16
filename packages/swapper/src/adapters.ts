@@ -1,11 +1,11 @@
 import { ChainId } from '@shapeshiftoss/caip'
 import {
   bitcoin,
+  blackfury,
   ChainAdapter,
   ChainAdapterManager,
   cosmos,
   ethereum,
-  blackfury,
   thorchain,
 } from '@shapeshiftoss/chain-adapters'
 import { KnownChainIds } from '@shapeshiftoss/types'
@@ -81,7 +81,7 @@ export const getAdapterManager = () => {
     },
   }
   const thorchainChainAdapter = new thorchain.ChainAdapter(runeAdapterArgs)
-  
+
   const runeAdapterArgs = {
     coinName: 'rune',
     providers: {

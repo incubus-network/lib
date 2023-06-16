@@ -34,9 +34,9 @@ import {
   ContractAddressInput,
   EstimateGasApproveInput,
   EstimateGasTxInput,
+  GetTokeRewardAmount,
   JinxyAddressesType,
   JinxyOpportunityInputData,
-  GetTokeRewardAmount,
   RebaseEvent,
   RebaseHistory,
   SignAndBroadcastTx,
@@ -66,7 +66,12 @@ export type ConstructorArgs = {
   chainReference?: EthereumChainReference
 }
 
-export const transformData = ({ tvl, apy, expired, ...contractData }: JinxyOpportunityInputData) => {
+export const transformData = ({
+  tvl,
+  apy,
+  expired,
+  ...contractData
+}: JinxyOpportunityInputData) => {
   return {
     type: DefiType.Staking,
     provider: 'ShapeShift',

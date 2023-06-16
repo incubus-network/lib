@@ -1,1 +1,1 @@
-export * from './EthereumChainAdapter'
+export * from './Blackfury/ChainAdapter'

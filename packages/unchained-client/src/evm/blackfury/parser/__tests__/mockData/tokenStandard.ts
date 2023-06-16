@@ -1,4 +1,4 @@
-import { Tx } from '../../../../../generated/avalanche'
+import { Tx } from '../../../../../generated/optimism'
 import { mempoolMock } from './mempoolMock'
 
 export const tokenStandard: Tx = {
@@ -25,7 +25,7 @@ export const tokenStandard: Tx = {
       symbol: 'OP',
       type: 'ERC20',
       from: '0xBcDdd1333982B26956Bf83D6fb704bC28Dfe4aBA',
-      to: '0xBcDdd1333982B26956Bf83D6fb704bC28Dfe4aBA',
+      to: '0xA1f55aC63e174fAbaF93e6b2854Da6D85C9FDC50',
       value: '19908484999999999942',
     },
   ],
